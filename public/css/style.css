@@ -1,5 +1,98 @@
 body {
-    background-color: aquamarine;
+    background-color: #FAEBD7;
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
+#title {
+    font-size: 5em;
+}
+
+#life {
+    text-indent: 3em;
+}
+/* Button definition */
+
+#boxButton {
+    background-color: #B8860B;
+    height: 33,33%;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.btn {
+    line-height: 50px;
+    height:50px;
+    text-align:center;
+    width: 250px;
+    cursor: pointer;
+
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+
+    padding: 0px 118px;
+}
+
+.btn::before {
+    content: '';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+}
+
+.btn:hover::before {
+    opacity: 0 ;
+    transform:  scale(0.5,0.5);
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+
+.btn:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+span {
+    font-size:1.3em;
+}
+
+/* End of button definition */
+
+section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+.menuImage {
+    width: 500px;
+    height: 300px;
+}
