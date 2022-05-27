@@ -5,7 +5,7 @@ body {
     
 }
 
-#title {
+h1 {
     font-size: 5em;
 }
 
@@ -36,6 +36,7 @@ body {
     position: relative;
 
     padding: 0px 118px;
+    border: 50px 0px;
 }
 
 .btn::before {
@@ -95,4 +96,10 @@ footer {
 .menuImage {
     width: 500px;
     height: 300px;
+}
+
+.poster {
+    width: 520px;
+    height: 800px;
+    padding: 50px;
 }
