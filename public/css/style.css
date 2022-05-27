@@ -9,9 +9,6 @@ h1 {
     font-size: 5em;
 }
 
-#life {
-    text-indent: 3em;
-}
 /* Button definition */
 
 #boxButton {
@@ -102,4 +99,8 @@ footer {
     width: 520px;
     height: 800px;
     padding: 50px;
+}
+
+p {
+    
 }
